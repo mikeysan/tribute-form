@@ -16,14 +16,14 @@
         }
         iframe {
             width: 100%;
-            max-width: 800px; /* Set a max width for larger screens */
-            height: 100vh;
+            max-width: 800px; /* Set a max-width for larger screens */
+            height: 100%; /* Allow iframe to take full height */
+            min-height: 600px; /* Ensure it doesn't get too small */
             border: none;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 769px) {
             iframe {
-                height: auto; /* Auto height for mobile */
-                min-height: 100vh; /* Ensures it takes up full height on smaller screens */
+                height: 80vh; /* Set a fixed height on larger screens */
             }
         }
     </style>
