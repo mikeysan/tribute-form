@@ -25,11 +25,18 @@
             background-position: center;
         }
 
+        .main {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
         .content {
-            max-width: 800px;
+            max-width: 400px;
             background-color: #fff;
             padding: 20px;
-            margin-top: -50px;
+            margin-right: 20px; /* Space between content and form */
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             text-align: center;
@@ -39,8 +46,8 @@
             width: 100%;
             max-width: 300px;
             border-radius: 10px;
-            float: left; /* Add this line to align image to the left */
-            margin-bottom: 20px;
+            margin-right: 20px; /* Add right margin for separation */
+            float: left;
         }
 
         p {
@@ -48,21 +55,14 @@
             line-height: 1.6;
             color: #333;
             text-align: left;
+            clear: both; /* Clear float */
         }
 
         iframe {
             width: 100%;
-            max-width: 800px;
-            height: 100%;
-            min-height: 600px;
+            max-width: 400px;
+            height: 600px;
             border: none;
-            margin-top: 20px;
-        }
-
-        @media (min-width: 769px) {
-            iframe {
-                height: 80vh;
-            }
         }
     </style>
 </head>
@@ -71,24 +71,25 @@
     <!-- Header Image -->
     <header></header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <!-- Insert Photograph Above Text Section -->
-        <img src="docs/assets/images/WhatsApp Image 2024-09-07 at 19.19.24_c9bf0baa.jpg" alt="Ginger Otum-Mba"> <!-- Replace with your photograph -->
+    <!-- Main content area for text and form -->
+    <div class="main">
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Insert Photograph Above Text Section -->
+            <img src="docs/assets/images/WhatsApp Image 2024-09-07 at 19.19.24_c9bf0baa.jpg" alt="Ginger Otum-Mba">
+            <p>
+                Hello,<br><br>
+                As you know, our Dad, Ginger Otum-Mba touched many lives, including yours. We’re collecting tributes to be read during the funeral service and would love for you to contribute.<br><br>
+                It could be a favourite memory, a quality you admired, or just a few words about how he impacted your life. There’s no need for it to be long or formal - whatever feels right to you.<br><br>
+                If you’d like to share something, please send it to us by 22-09-24. Your words will help us honour our Dad in a meaningful way.<br><br>
+                Thank you so much for being part of this celebration of his life.<br><br>
+                Warm regards,<br>
+                The family of G. U. Otum-Mba
+            </p>
+        </div>
 
-        <p>
-            Hello,<br><br>
-            As you know, our Dad, Ginger Otum-Mba touched many lives, including yours. We’re collecting tributes to be read during the funeral service and would love for you to contribute.<br><br>
-            It could be a favourite memory, a quality you admired, or just a few words about how he impacted your life. There’s no need for it to be long or formal - whatever feels right to you.<br><br>
-            If you’d like to share something, please send it to us by 22-09-24. Your words will help us honour our Dad in a meaningful way.<br><br>
-            Thank you so much for being part of this celebration of his life.<br><br>
-            Warm regards,<br>
-            The family of G. U. Otum-Mba
-        </p>
+        <!-- Embed Google Form -->
+        <iframe src="https://forms.gle/Hii6J4chspKqbXri8"></iframe>
     </div>
-
-    <!-- Embed Google Form -->
-    <iframe src="https://forms.gle/Hii6J4chspKqbXri8"></iframe>
-
 </body>
 </html>
