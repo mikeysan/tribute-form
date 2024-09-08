@@ -23,6 +23,41 @@
             background-image: url('docs/assets/images/header1.webp'); /* Replace with your header image */
             background-size: cover;
             background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(66, 165, 245, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(30, 136, 229, 0.9);
         }
 
         .main {
@@ -87,8 +122,15 @@
 </head>
 <body>
 
-    <!-- Header Image -->
-    <header></header>
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Main content area for text and form -->
     <div class="main">
